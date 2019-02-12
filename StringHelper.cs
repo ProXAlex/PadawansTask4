@@ -10,6 +10,8 @@ namespace PadawansTask4
         {
             if (str == null)
                 throw new ArgumentNullException("Source cannot be null");
+            if (str == string.Empty)
+                throw new ArgumentNullException("String Cannot Be Empty.");
             int result = 0;
             List<char> vowels = new List<char>() { 'a', 'e', 'i', 'o', 'u' };
             foreach (char c in str)
